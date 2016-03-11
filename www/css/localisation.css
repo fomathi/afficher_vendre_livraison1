@@ -1,0 +1,28 @@
+﻿
+/* LOCALISATION STYLE : MAP STYLE*/
+.map {
+   /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;*/
+}
+
+.map-icone-details > * {
+    float: left ;
+    margin-right: 2px;
+}
+
+.map-icone-details_image {
+    height:10px;
+}
+
+.map-icone-details_adresse{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+}
+
+.map-icone-details_description{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+}

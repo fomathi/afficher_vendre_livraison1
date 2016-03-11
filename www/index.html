@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="lib/font-awesome-4.5.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/localisation.css" />
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>A-V</title>
+    </head>
+    <body>
+        <div class="app">
+            <div class="navbar">
+                <div class="appDef">
+                    <div class="homeLogo">
+                        <a href="#map"><i class="fa fa-map-marker fa-2x map-icone active"></i></a>
+                    </div>
+                    <div class="appTitle">
+                        <span class="greenTitle">A</span>
+                        <span class="whiteTitle">&</span>
+                        <span class="greenTitle">V</span>
+                    </div>
+                </div>
+                <div class="topMenu">
+                    <a href="#filter"><i class="fa fa-search fa-2x filter-icon"></i></a>
+                    <a href="#user"><i class="fa fa-user fa-2x user-icone"></i></a>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div id="container">
+                <div id="map-container">
+                    <div id="geolocalisation">
+                        <p class="loading">Loading Map<br><br><i class="fa fa-spinner fa-pulse"></i></p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div id="filter-container">
+                    Coming soon <i class="fa fa-spinner fa-pulse"></i>
+                </div>
+                <div id="user-container">
+                    Coming soon <i class="fa fa-spinner fa-pulse"></i>
+                </div>
+                <div id="details-container">
+                    <div class="imageGallery">
+                    </div>
+                    <div class="clear"></div>
+                    <div class="annonceDetails">
+
+                        <div class="clear"></div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="lib/jquery/jquery-1.8.2.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBmNyuaLLA5s8-Y6yyWmeAwiUzfvEnmzyI" type="text/javascript"></script>
+        <script type="text/javascript" src="js/av.js"></script>
+        <script type="text/javascript" src="lib/font-awesome-4.5.0/js/fontawesome-markers.min.js"></script>
+        <script src="js/localisation.js" type="text/javascript"></script>
+        <script src="js/detailsAdsReader.js" type="text/javascript"></script>
+        <script src="js/Model.js" type="text/javascript"></script>
+
+        <script src="lib/vendor/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="lib/vendor/js/holder.js" type="text/javascript"></script>
+
+    </body>
+</html>

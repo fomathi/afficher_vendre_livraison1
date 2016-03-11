@@ -1,0 +1,210 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+.clear {
+    height:1px;
+    clear:both;
+}
+.active {
+    color:#FFFFFF !important;
+}
+
+/* Portrait layout (default) */
+.app {
+
+}
+.navbar {
+    background:#2C4388;
+    height:35px;
+    color:#FFFFFF;
+    padding: 10px 5px 8px 5px;
+    position: fixed;
+    width:100%
+}
+.navbar .appDef{
+    width:55%;
+    float:left;
+}
+.navbar .topMenu{
+    width: 43%;
+    float:left;
+    text-align:right;
+}
+
+.appDef .homeLogo{
+    width:10%;
+    float: left;
+}
+.appDef .appTitle{
+    width:90%;
+    text-align:right;
+}
+.appDef a{
+    text-decoration:none;
+}
+.appDef .fa-map-marker{
+    color:#6ACA25;
+}
+.topMenu .fa-search{
+    color:#6ACA25;
+}
+.topMenu .fa-user{
+    color:#6ACA25;
+    margin-left:10px;
+}
+.greenTitle{
+    font-weight:bold;
+    color:#6ACA25;
+    font-size:20px;
+}
+.whiteTitle{
+    color:#FFFFFF;
+    font-weight:bold;
+    padding:0px 1px;
+    font-size:20px;
+}
+#container{
+    padding:5px;
+    text-align:center;
+    margin-top:45px;
+    position:absolute;
+    z-index: -1;
+}
+
+#map-container {
+	position: fixed;
+	top: 53px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+}
+
+#geolocalisation {
+	width:100%;
+	height:100%;
+}
+
+#filter-container, #user-container, #details-container{display:none;}
+
+.imageGallery{
+    height:300px;
+    overflow:hidden;
+    background:#a5cfeb;
+    text-align:center;
+    margin:0px;
+    padding:0px;
+}
+
+@media screen and (min-width: 600px) {
+    .imageGallery{
+        height:400px;
+        overflow:hidden;
+        background:#a5cfeb;
+        text-align:center;
+        margin:0px;
+        padding:0px;
+    }
+
+    .carousel-inner img{
+        height: auto;
+        width: auto;
+        max-width: 300px;
+        max-height: 400px;
+    }
+
+    .carousel-caption{
+        padding-top:0px;
+    }
+}
+
+.carousel-inner{
+    padding:0px;
+    margin:0px;
+}
+.carousel{
+    text-align:center;
+}
+.annonceDetails{
+    width:100%;
+    font-size:14px;
+}
+.row {
+    padding:-10px;
+    margin:-10px;
+    margin-bottom:-50px;
+}
+.annonceDetails .resume {
+    float:left;
+    width:40%;
+    text-align:left;
+    padding:10px;
+}
+.annonceDetails .description{
+    float:right;
+    width:55%;
+    text-align: left;
+    padding:10px;
+}
+@media screen and (min-width: 600px) {
+    .annonceDetails .resume {
+        float:left;
+        width:20%;
+    }
+    .annonceDetails .description{
+        float:right;
+        width:75%;
+    }
+}
+.annonceTitle {
+    font-weight:bold;
+}
+.annoncePrix {
+    font-weight:bold;
+    color: #6ACA25;
+}
+.otherInfo {
+    display:block;
+    list-style:square;
+    text-align:left;
+    width:100%;
+        font-weight:bold;
+        color:#2C4388
+}
+
+.otherInfo  li{
+    text-align:left;
+    font-weight:bold !important;
+    color:#2C4388 !important;
+}
+
